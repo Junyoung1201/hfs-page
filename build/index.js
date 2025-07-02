@@ -1,13 +1,4 @@
-function createGoogleDriveDirectDlUrl(shareUrl) {
-    const idMatch = shareUrl.match(/[-\w]{25,}/);
-    if (!idMatch) {
-        console.error('유효하지 않은 Google Drive 링크입니다.');
-        return null;
-    }
-    const fileId = idMatch[0];
-    console.log(fileId);
-    return `https://drive.google.com/uc?export=download&id=${fileId}`;
-}
+
 
 // 모드팩 설명
 const description = "마인크래프트 1.21.6 행복한 날다람쥐 모드팩입니다. 바닐라의 느낌을 유지하면서 몰입감과 마인크래프트 어드벤쳐의 경험을 확대하기 위한 모드들로 구성되어 있습니다.";
@@ -16,7 +7,7 @@ document.querySelector("#about p").innerHTML = description;
 
 // 모드팩 압축파일 url
 const modpackDlUrl = "https://app.filen.io/#/d/199522d6-d475-47ba-968d-cff23c239472%234Z6Z9P3lllAJfRtidoVqeAFAbUJoawsr";
-document.querySelector("a#modpack-dl").href = createGoogleDriveDirectDlUrl(modpackDlUrl);
+document.querySelector("a#modpack-dl").href = modpackDlUrl
 
 // 설치기 url
 const installerUrl = "https://github.com/Junyoung1201/saehyeon-mc-env/releases/latest";
