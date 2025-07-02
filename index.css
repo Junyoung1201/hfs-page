@@ -1,0 +1,118 @@
+:root {
+    --dark-brown: #4E3E2C;
+    --peach: #FFB86B;
+    --cream: #FCE8B2;
+    --darker-brown: #3C2F26;
+    --light-bg: #FFF3D1;
+    --light-gray: #C2B7A3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--darker-brown);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-brown);
+    color: var(--cream);
+    padding: 2rem;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    background-color: var(--peach);
+    color: var(--darker-brown);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logo img {
+    position: relative;
+    top: 8px;
+    height: 100px;
+}
+
+.btn:hover {
+    background: #FFA14C;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    border-bottom: 3px solid var(--peach);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-brown);
+}
+
+#video iframe {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--light-gray);
+}
+
+#mods ul {
+    list-style: none;
+}
+
+#mods ul li {
+    background-color: var(--cream);
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+#screenshots img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--light-gray);
+    color: var(--darker-brown);
+    font-size: 0.9rem;
+}
