@@ -6,7 +6,7 @@ const description = "마인크래프트 1.21.6 행복한 날다람쥐 모드팩�
 document.querySelector("#about p").innerHTML = description;
 
 // 모드팩 압축파일 url
-const modpackDlUrl = "https://app.filen.io/#/d/5fb4227a-2329-4770-b682-1076a94efe6a%23N6F3HhvNkVCBBdHoqOtUzOc8nQYa1rny";
+const modpackDlUrl = "https://app.filen.io/#/d/1fc25886-cc98-4703-bfc8-bd7417f28c8a%23mbefiTw5iJA89mEFwEYyq596yaeTzGgj";
 document.querySelector("a#modpack-dl").href = modpackDlUrl
 
 // 설치기 url
